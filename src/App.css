@@ -28,8 +28,9 @@ nav {
 }
 
 .menu {
-    padding: 80px;
     padding: 90px;
+    padding-top: 150px;
+    margin-top: -90px;
     background-color: rgb(27, 25, 27);
 }
 
@@ -41,7 +42,7 @@ nav {
 }
 
 .startproject {
-    font-size: 24px;
+    font-size: 22px;
     font-family: Gotham-light, sans-serif;
 }
 
