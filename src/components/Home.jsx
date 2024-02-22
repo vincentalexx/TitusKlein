@@ -5,7 +5,7 @@ import { useRef } from 'react';
 import arrow from '../assets/images/arrow.svg';
 import arrowbot from '../assets/images/arrowbot.svg';
 
-const Dashboard = () => {
+const Home = () => {
   const navRef = useRef();
 
   const showNavbar = () => {
@@ -13,7 +13,7 @@ const Dashboard = () => {
   }
 
   return (
-    <div className='dashboard' style={{width: '100vw', height: '100vh', }}>
+    <div className='home' style={{width: '100vw', height: '100vh', }}>
       <div className='nav d-flex align-items-center justify-content-between' style={{backgroundColor: "rgb(27, 25, 27)", position: 'sticky', top: '0'}}>
         <a href="">
           <img src={titusklein} alt="Titus Klein" style={{width: "180px", }}/>
@@ -49,4 +49,4 @@ const Dashboard = () => {
   );
 }
 
-export default Dashboard;
+export default Home;
