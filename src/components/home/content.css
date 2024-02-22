@@ -1,0 +1,81 @@
+*{
+    font-family: Gotham-light, sans-serif;
+}
+
+.drive {
+    padding-top: 12.3vw;
+    margin-bottom: 15vw;
+}
+
+.content {
+    padding: 0 8vw 0 8vw;
+    justify-content: space-between;
+    display: flex;
+}
+
+.sgg {
+    width: 24vw;
+    height: 38vw;
+    max-height: 800px;
+    max-width: 480px;
+    object-fit: cover;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.perfume {
+    position: absolute;
+    width: 30vw;
+    height: 20vw;
+    max-height: 900px;
+    max-width: 520px;
+    object-fit: contain;
+    margin-top: 12vw;
+    margin-left: 8vw;
+    padding-left: 0;
+    z-index: 500;
+}
+
+.drive-text{
+    width: 50%;
+    max-width: 600px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (max-width: 767px){
+    .drive {
+        padding-top: 25vw;
+        padding-left: 3vw;
+    }
+
+}
+
+@media screen and (max-width: 479px){
+    .drive {
+        width: 54vw;
+    }
+    
+} 
+
+@media screen and (max-width: 991px){
+    .sgg {
+        width: 48vw;
+        height: 60vw;
+        padding-left: 5vw;
+    }
+    
+    .perfume{
+        margin-top: 20vw;
+        margin-left: 15vw;
+        width: 45vw;
+        height: 23vw;
+        
+    }
+
+    .drive-text{
+        width: 90%;
+        margin-bottom: 18vw;
+    }
+}

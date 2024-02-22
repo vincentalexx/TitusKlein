@@ -1,6 +1,7 @@
 import arrowbot from '../../assets/images/arrowbot.svg';
 import '../../App.css'
 import Navbar from '../Navbar';
+import Content from './Content';
 
 function Home() {
   return (
@@ -15,11 +16,12 @@ function Home() {
             feel. We help your large tech company or startup unlock the revenue
             potential of your ideas.
           </p>
-          <a href="">
+          <a href="#content">
             <img src={arrowbot} alt="" style={{ width: "30px" }} />
           </a>
         </div>
       </div>
+      <Content />
     </Navbar>
 
   );

@@ -14,7 +14,7 @@ function Navbar({children}) {
 
   return (
     <div className='' style={{width: '100vw', height: '100vh', }}>
-      <div className='nav d-flex align-items-center justify-content-between' style={{backgroundColor: "rgb(27, 25, 27)", position: 'sticky', top: '0', zIndex:'88888'}}>
+      <div className='nav d-flex align-items-center justify-content-between' style={{ position: 'sticky', top: '0', zIndex:'88888'}}>
         <a href="">
           <img src={titusklein} alt="Titus Klein" style={{width: "180px", }}/>
         </a>
