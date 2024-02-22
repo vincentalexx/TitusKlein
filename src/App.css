@@ -1,0 +1,98 @@
+.dashboard {
+    background-image: url('./assets/images/dashboard.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+/* transform: translate3d(0px, 0px, 0px) */
+
+.nav{
+    padding: 30px 38px 30px 80px;
+}
+
+nav {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    transition: 0.5s;
+    transform: translateX(-100vw);
+}
+
+.responsive_nav{
+    transform: none;
+}
+
+.menu {
+    padding: 80px;
+    padding: 90px;
+    background-color: rgb(27, 25, 27);
+}
+
+.toggle {
+    opacity: 0.5;
+    font-size: 35px;
+    margin-bottom: 5px;
+    font-family: Gotham-light, sans-serif;
+}
+
+.startproject {
+    font-size: 24px;
+    font-family: Gotham-light, sans-serif;
+}
+
+.toggle:hover {
+    opacity: 1;
+    /* transform: translate3d(0px, 0px, 0px); */
+    transition: 0.2s ease-in-out;
+}
+
+.title{
+    max-width: 500px;
+    max-height: 700px;
+    margin-left: 10vw;
+    margin-top: 20vh;
+}
+
+.h1{
+    font-size: 70px;
+    font-family: Gotham-bold, sans-serif;
+}
+
+.desc {
+    margin-top: 15px;
+    font-size: 18px;
+    margin-top: 20px;
+    color: white;
+    font-family: Gotham-light, sans-serif;
+    max-width: 500px;
+    line-height: 35px;
+    margin-bottom: 55px;
+}
+
+@media screen and (max-width: 767px){
+    .toggle {
+        font-size: 30px;
+        margin-bottom: 15px;
+    }
+
+    .startproject {
+        font-size: 18px;
+    }
+
+    .menu {
+        padding: 40px;
+        padding-top: 50px;
+    }
+
+    .nav{
+        padding: 30px 40px 30px 30px;
+    }
+    
+    .h1{
+        font-size: 60px;
+    }
+
+    .desc{
+        max-width: 400px;
+    }
+}
