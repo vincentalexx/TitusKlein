@@ -2,6 +2,10 @@
     background-image: url('./assets/images/dashboard.jpg');
     background-position: center;
     background-size: cover;
+    height: 100vh;
+    padding: 10vw;
+    padding-top: 28vh;
+    margin-top: -10.4vh;
 }
 
 /* transform: translate3d(0px, 0px, 0px) */
@@ -16,6 +20,7 @@ nav {
     position: fixed;
     transition: 0.5s;
     transform: translateX(-100vw);
+    z-index: 100;
 }
 
 .responsive_nav{
@@ -49,8 +54,6 @@ nav {
 .title{
     max-width: 500px;
     max-height: 700px;
-    margin-left: 10vw;
-    margin-top: 20vh;
 }
 
 .h1{
