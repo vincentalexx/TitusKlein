@@ -18,15 +18,20 @@ nav {
     width: 100vw;
     height: 100vh;
     position: fixed;
-    transition: 0.5s;
+    transition: 0.3s;
     transform: translateX(-100vw);
-    z-index: 100;
+    z-index: 800;
     visibility: hidden;
 }
 
 .responsive_nav{
     transform: none;
     visibility: visible;
+
+    .toggle {
+        opacity: 0.5;
+        transition: 1s ease-in-out;
+    }
 }
 
 .menu {
@@ -37,7 +42,7 @@ nav {
 }
 
 .toggle {
-    opacity: 0.5;
+    opacity: 0;
     font-size: 35px;
     margin-bottom: 5px;
     font-family: Gotham-light, sans-serif;
@@ -58,6 +63,9 @@ nav {
     max-width: 500px;
     max-height: 700px;
     margin-top: 15px;
+    transform: translateY(80px);
+    animation: fade 2s;
+    animation-timeline: view();
 }
 
 .h1{
@@ -101,5 +109,18 @@ nav {
 
     .desc{
         max-width: 400px;
+    }
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+        transform: translateY(80px);
+        height: 0px;
+    }
+    
+    50% {
+        transform: translateY(40px);
+        opacity: 1;
     }
 }

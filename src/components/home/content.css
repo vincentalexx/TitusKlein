@@ -4,13 +4,18 @@
 
 .drive {
     padding-top: 12.3vw;
-    margin-bottom: 15vw;
 }
 
 .content {
     padding: 0 8vw 0 8vw;
     justify-content: space-between;
     display: flex;
+    transition: 1s ease-in-out;
+}
+
+.drive-img{
+    animation: fades 1s;
+    animation-timeline: view();
 }
 
 .sgg {
@@ -31,9 +36,37 @@
     max-width: 520px;
     object-fit: contain;
     margin-top: 12vw;
-    margin-left: 8vw;
+    margin-left: 9vw;
     padding-left: 0;
     z-index: 500;
+}
+
+.car {
+    width: 24vw;
+    height: 38vw;
+    max-height: 800px;
+    max-width: 480px;
+    object-fit: cover;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.books {
+    position: absolute;
+    width: 30vw;
+    height: 20vw;
+    max-height: 900px;
+    max-width: 520px;
+    object-fit: contain;
+    margin-top: 12vw;
+    margin-left: 9vw;
+    padding-left: 0;
+    z-index: 500;
+}
+
+.box{
+    max-width: 1000px;
+    width: 88%;
 }
 
 .drive-text{
@@ -44,12 +77,31 @@
     justify-content: center;
 }
 
+.captivate{
+    width: 50%;
+}
+
+.box{
+    object-fit: contain;
+}
+
+.captivate-text{
+    font-size: 34px;
+}
+
 @media screen and (max-width: 767px){
     .drive {
         padding-top: 25vw;
         padding-left: 3vw;
     }
 
+    .captivate {
+        width: 100%;
+    }
+
+    .captivate-text{
+        font-size: 28px;
+    }
 }
 
 @media screen and (max-width: 479px){
@@ -61,8 +113,8 @@
 
 @media screen and (max-width: 991px){
     .sgg {
-        width: 48vw;
-        height: 60vw;
+        width: 37vw;
+        height: 52vw;
         padding-left: 5vw;
     }
     
@@ -77,5 +129,27 @@
     .drive-text{
         width: 90%;
         margin-bottom: 18vw;
+    }
+
+    .box {
+        width: 88%;
+    }
+    .captivate {
+        width: 100%;
+    }
+}
+
+@keyframes fades {
+    from {
+        opacity: 0;
+        will-change: transform; 
+        transform: translate3d(0px, 19.9544px, 0px) scale3d(0, 0, 1);
+    }
+
+    to {
+        opacity: 1;
+        will-change: transform; 
+        transform: translate3d(0px, 19.9544px, 0px) scale3d(1, 1, 1);
+        transform-style: preserve-3d;
     }
 }
