@@ -1,11 +1,16 @@
+*{
+    font-family: Gotham-light, sans-serif;
+}
+
 .home {
     background-image: url('./assets/images/dashboard.jpg');
     background-position: center;
     background-size: cover;
-    height: 101vh;
+    height: 100vh;
+    width: 100vw;
     padding: 10vw;
     padding-top: 28vh;
-    margin-top: -11.1vh;
+    top: 0;
 }
 
 /* transform: translate3d(0px, 0px, 0px) */
@@ -63,9 +68,8 @@ nav {
     max-width: 500px;
     max-height: 700px;
     margin-top: 15px;
-    transform: translateY(80px);
-    animation: fade 2s;
-    animation-timeline: view();
+    animation: fade 1s;
+    animation-timeline: calc();
 }
 
 .h1{
@@ -82,6 +86,25 @@ nav {
     max-width: 500px;
     line-height: 35px;
     margin-bottom: 50px;
+}
+
+.footer{
+    display: grid;
+    grid-column-gap: 40px;
+    grid-row-gap: 14px;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 2fr 3fr;
+    grid-auto-columns: 1fr;
+    margin-left: 8vw;
+    margin-right: 8vw;
+    padding-top: 70px;
+    padding-bottom: 37px;
+    align-items: center;
+}
+
+.footer-contact{
+    display: flex;
+    align-items: center;
 }
 
 @media screen and (max-width: 767px){
@@ -110,17 +133,32 @@ nav {
     .desc{
         max-width: 400px;
     }
+
+    .footer{
+        grid-template-columns: 2fr 1fr 2fr;
+    }
+
+    .footer-contact{
+        justify-content: end;
+    }
+}
+
+@media screen and (max-width: 991px){
+    .footer{
+        grid-template-columns: 2fr 2fr 1fr;
+        grid-column-gap: 20px;
+    }
+    
 }
 
 @keyframes fade {
-    0% {
+    from{
         opacity: 0;
-        transform: translateY(80px);
-        height: 0px;
+        transform: translateY(70px);
     }
-    
-    50% {
-        transform: translateY(40px);
+
+    to{
         opacity: 1;
+        transform: translateY(none);
     }
 }

@@ -1,11 +1,13 @@
 import arrowbot from '../../assets/images/arrowbot.svg';
 import '../../App.css'
-import Navbar from '../Navbar';
+import Layout from '../Layout';
 import Content from './Content';
+import Meeting from './Meeting';
 
 function Home() {
+
   return (
-    <Navbar>
+    <Layout>
       <div className="home">
         <div className="title">
           <h1 className="h1 text-white" style={{ letterSpacing: "-1px" }}>
@@ -22,7 +24,8 @@ function Home() {
         </div>
       </div>
       <Content />
-    </Navbar>
+      <Meeting />
+    </Layout>
 
   );
 };
