@@ -19,13 +19,14 @@ function Layout({children}) {
   }
 
   window.addEventListener('scroll', reveal);
+
   return (
-    <div className='' style={{width: '100vw', height: '100vh', }}>
+    <div className='' style={{width: '100vw', height: '100vh', backgroundColor: '#222222'}}>
       <Navbar/>
       <div className='' style={{top: '0', position: 'absolute'}}>
         {children}
-        <Footer/>
-        </div>
+      <Footer/>
+      </div>
     </div>
   );
 }

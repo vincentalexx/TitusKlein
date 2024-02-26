@@ -5,15 +5,29 @@ import arrow from '../assets/images/arrow.svg';
 import { useRef } from 'react';
 
 function Navbar() {
-    const navRef = useRef();
+  const navRef = useRef();
 
   const showLayout = () => {
     navRef.current.classList.toggle('responsive_nav');
   }
 
+  function selected() {
+    const reveal = document.querySelectorAll('.reveal');
+
+    for (let i = 0; i < reveal.length; i++) {
+      let windowHeight = window.innerHeight;
+      let revealTop = reveal[i].getBoundingClientRect().top;
+      let revealPoint = 200;
+
+      if (revealTop < windowHeight - revealPoint) {
+        reveal[i].classList.add('active');
+      }
+    }
+  }
+
   return (
     <div>
-        <div className='nav d-flex align-items-center justify-content-between' style={{ position: 'sticky', top: '0', zIndex:'88888'}}>
+        <div className='nav d-flex align-items-center justify-content-between' style={{ zIndex:'88888'}}>
             <a href="">
             <img src={titusklein} alt="Titus Klein" style={{width: "180px", }}/>
             </a>

@@ -3,7 +3,7 @@ import bike from '../../assets/images/bike.jpg'
 
 function Meeting() {
   return (
-    <section id='meeting' className='' style={{paddingBottom: '70px'}}>
+    <section id='meeting' className='' style={{marginBottom: '70px'}}>
         <div className='d-flex flex-column justify-content-center align-items-center reveal meeting' style={{marginBottom: '15vw'}}>
             <h4 className='mb-3' style={{fontSize: '12px', letterSpacing: '.4em', fontFamily: 'Gotham-medium, sans-serif'}}>INNOVATION BY DESIGN</h4>
             <p className='' style={{fontFamily: 'Gotham-bold, sans-serif', fontSize: '34px', letterSpacing: '2px'}}>SET UP A 15 MIN MEETING</p>

@@ -14,7 +14,7 @@ function Footer() {
           <a href="#" style={{marginLeft: '36px'}} className='d-flex align-items-center'>
             <img src={twitter} alt="linkedin" style={{height: '20px', width: '20px', marginBottom: '0'}}/>
           </a>
-          <button style={{backgroundColor: 'rgb(50, 54, 56)', padding: '8px 16px', fontSize: '9px', border: '0', marginTop: '1px', color: 'white', marginLeft: '42px'}}>TOP</button>
+          <button style={{backgroundColor: 'rgb(50, 54, 56)', padding: '10px 16px', fontSize: '9px', border: '0', marginTop: '1px', color: 'white', marginLeft: '42px', letterSpacing: '0.3em'}}>TOP</button>
         </div>
     </div>
   )

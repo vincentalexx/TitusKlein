@@ -75,8 +75,7 @@
 
 .captivate{
     width: 50%;
-    animation: fades 1s;
-    animation-timeline: view();
+    opacity: 0;
 }
 
 .box{
@@ -166,6 +165,8 @@
     .work{
         grid-template-columns: 1fr;
         height: auto;
+        padding-left: 5vw;
+        padding-right: 5vw;
     }
 }
 
