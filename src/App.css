@@ -68,7 +68,7 @@ nav {
 .title{
     max-width: 500px;
     max-height: 700px;
-    margin-top: 15px;
+    margin-top: 28px;
     animation: fade 1s;
     animation-timeline: calc();
 }

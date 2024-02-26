@@ -38,7 +38,7 @@ function Navbar() {
         <nav ref={navRef} className='menu d-flex flex-column '>
             <a href="/" className='toggle text-decoration-none text-white' style={{ fontWeight: '700', letterSpacing: '0.3vw', paddingTop: '12px', paddingBottom: '12px', width: '125px'}}>HOME</a>
             <a href="/about" className='toggle text-decoration-none text-white' style={{ fontWeight: '700', letterSpacing: '0.3vw', paddingTop: '12px', paddingBottom: '12px', width: '150px'}}>ABOUT</a>
-            <a href="" className='toggle text-decoration-none text-white' style={{ fontWeight: '700', letterSpacing: '0.3vw', paddingTop: '12px', paddingBottom: '12px', width: '133px' }}>WORK</a>
+            <a href="/work" className='toggle text-decoration-none text-white' style={{ fontWeight: '700', letterSpacing: '0.3vw', paddingTop: '12px', paddingBottom: '12px', width: '133px' }}>WORK</a>
             <a href="" className='d-flex toggle text-decoration-none text-white align-items-end' style={{ fontWeight: '700', letterSpacing: '0.3vw', paddingTop: '12px', paddingBottom: '12px', width: '435px'}}>PRESENTATIONS <p style={{fontSize: '21px', color: '#0ef', marginBottom: '7px', marginLeft: '15px'}}>NEW</p></a>
             <a href="" className='toggle text-decoration-none text-white' style={{ fontWeight: '700', letterSpacing: '0.3vw', paddingTop: '12px', paddingBottom: '12px', width: '145px'}}>FOCUS</a>
             <a href="" className='toggle text-decoration-none text-white' style={{ fontWeight: '700', letterSpacing: '0.3vw', paddingTop: '12px', paddingBottom: '12px', width: '210px'}}>CONTACT</a>
