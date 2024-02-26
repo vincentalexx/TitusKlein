@@ -4,10 +4,10 @@ import './work.css'
 
 function Work() {
   return (
-    <div className='work-page'>
+    <div className='work-page' style={{ scrollSnapType: 'y mandatory' }}>
       <Layout>
         <div className="ryde work-section">
-          <div className="title">
+          <div className="title reveal">
             <h1 className="h1 text-white" style={{ letterSpacing: "-1px" }}>
               RYDE
             </h1>
@@ -20,7 +20,7 @@ function Work() {
           </div>
         </div>
         <div className="dash reveal work-section">
-          <div className="title">
+          <div className="title reveal">
             <h1 className="h1" style={{ letterSpacing: "-1px", color: 'rgb(50, 54, 56)' }}>
               DASH
             </h1>
@@ -32,7 +32,7 @@ function Work() {
           </div>
         </div>
         <div className="ada reveal work-section">
-          <div className="title">
+          <div className="title reveal">
             <h1 className="h1 text-white" style={{ letterSpacing: "-1px" }}>
               ADA
             </h1>
@@ -44,7 +44,7 @@ function Work() {
           </div>
         </div>
         <div className="espy reveal work-section">
-          <div className="title">
+          <div className="title reveal">
             <h1 className="h1" style={{ letterSpacing: "-1px", color: 'rgb(50, 54, 56)'}}>
               ESPY
             </h1>
