@@ -4,11 +4,10 @@ import './about.css'
 import arrowbot from '../../assets/images/arrowbot.svg'
 import Guide from './Guide'
 import about2 from '../../assets/images/about2.jpeg'
+import {motion} from 'framer-motion'
+import { useRef, useEffect, useState } from 'react'
+import { CarouselList } from './CarouselList'
 import Carousel from './Carousel'
-import Slider from "react-slick";
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
-
 
 function About() {
   return (
@@ -28,7 +27,6 @@ function About() {
         </div>
         <div className='about-child'>
           <Guide />
-          <Carousel />
         </div>
         <div className='reveal'>
             <img src={about2} alt="titus klein" style={{maxWidth: '100%'}}/>

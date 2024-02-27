@@ -132,11 +132,14 @@
 }
 
 .active {
-    animation: fades 1.5s;
+    animation: fade-home 1.5s;
     animation-timeline: calc();
     opacity: 1;
 }
 
+.reveal{
+    opacity: 0;
+}
 
 @media screen and (max-width: 479px){
     .drive {
@@ -170,7 +173,7 @@
     }
 }
 
-@keyframes fades {
+@keyframes fade-home {
     from{
         opacity: 0;
         transform: translateY(70px);

@@ -23,10 +23,6 @@ const router = createBrowserRouter([
     path: "/work",
     element: <Work />,
   },
-  {
-    path: "/carousel",
-    element: <Carousel />,
-  },
 ]);
 
 ReactDOM.createRoot(document.getElementById('root')).render(

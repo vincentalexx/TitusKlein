@@ -77,6 +77,21 @@
     line-height: 2;
 }
 
+.carousel{
+    cursor: grab;
+    overflow-x: hidden;
+    max-width: 100vw;
+    margin-left: 20vw;
+}
+
+.inner-carousel{
+    display: flex;
+}
+
+.item{
+    pointer-events: none;
+}
+
 @media screen and (max-width: 479px){
 
 } 
@@ -138,4 +153,5 @@
     .loc-text{
         margin-bottom: 6vw;
     }
+
 }

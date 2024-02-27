@@ -1,5 +1,6 @@
 import React from 'react'
 import Steps from './Steps'
+import Carousel from './Carousel'
 
 function Guide() {
   return (
@@ -22,6 +23,7 @@ function Guide() {
                 <p className='guide-2-text' style={{fontSize: '16.5px'}}>Titus Klein focuses on turning your teams ideas and concepts into viable commercial products and revolutionary ecosystems that drive revenue and serve as a foundation for growth. Working with startups, we’ve helped innovation and marketing teams like yours launch over 200+ products in the last 15 years.</p>
             </div>
         </div>
+        <Carousel />
         <div>
             <Steps />
         </div>
