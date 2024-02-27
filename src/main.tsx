@@ -7,6 +7,7 @@ import {
 } from "react-router-dom";
 import Home from './components/home/Home'
 import About from './components/about/About'
+import Carousel from './components/about/Carousel'
 import Work from './components/work/Work'
 
 const router = createBrowserRouter([
@@ -21,6 +22,10 @@ const router = createBrowserRouter([
   {
     path: "/work",
     element: <Work />,
+  },
+  {
+    path: "/carousel",
+    element: <Carousel />,
   },
 ]);
 

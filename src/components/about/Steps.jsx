@@ -8,7 +8,7 @@ function Steps() {
             <div className='next-steps col-lg-4 reveal' style={{marginBottom: '2vw'}}>
                 <p className='your-guide' style={{letterSpacing: '2px', fontFamily: 'Gotham-bold, sans-serif', fontSize: '34px', lineHeight: '1'}}>NEXT STEPS</p>
                 <p style={{letterSpacing: '0.4em', lineHeight: '1.9em', fontSize: '10px', fontFamily: 'Gotham-medium, sans-serif'}}>HOW TO PARTNER WITH US</p>
-                <button className='btn-talk reveal' style={{fontFamily: 'Gotham-light, sans-serif', backgroundColor: 'rgb(50, 54, 56)', letterSpacing: '0.3em', padding: '15px 29px', fontSize: '11px', border: '0', marginTop: '15px', color: 'white'}}>LET'S TALK</button>
+                <button className='btn-talk reveal' style={{fontFamily: 'Gotham-light, sans-serif', backgroundColor: 'rgb(50, 54, 56)', letterSpacing: '0.3em', padding: '15px 29px', fontSize: '11px', border: '0', marginTop: '15px', color: 'white', maxHeight: '45px'}}>LET'S TALK</button>
             </div>
             <div className='col-lg-4 reveal'>
                 <div style={{marginBottom: '6vw'}}>

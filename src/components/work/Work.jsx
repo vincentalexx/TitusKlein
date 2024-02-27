@@ -6,8 +6,8 @@ function Work() {
   return (
     <div className='work-page' style={{ scrollSnapType: 'y mandatory' }}>
       <Layout>
-        <div className="ryde work-section">
-          <div className="title reveal">
+        <section id='ryde' className="ryde work-section">
+          <div className="title">
             <h1 className="h1 text-white" style={{ letterSpacing: "-1px" }}>
               RYDE
             </h1>
@@ -18,8 +18,8 @@ function Work() {
               <button className='btn-dash' style={{fontFamily:  'Gotham-light, sans-serif', backgroundColor: 'rgb(50, 54, 56)', letterSpacing: '0.3em', padding: '15px 29px', fontSize: '11px', border: '0', marginTop: '15px', color: 'white'}}>VIEW PROJECT</button>
             </a>
           </div>
-        </div>
-        <div className="dash reveal work-section">
+        </section>
+        <section id='dash' className="dash reveal work-section">
           <div className="title reveal">
             <h1 className="h1" style={{ letterSpacing: "-1px", color: 'rgb(50, 54, 56)' }}>
               DASH
@@ -30,8 +30,8 @@ function Work() {
               <button className='btn-ryde' style={{fontFamily:  'Gotham-light, sans-serif', backgroundColor: 'rgb(50, 54, 56)', letterSpacing: '0.3em', padding: '15px 29px', fontSize: '11px', border: '0', marginTop: '15px', color: 'white'}}>VIEW PROJECT</button>
             </a>
           </div>
-        </div>
-        <div className="ada reveal work-section">
+        </section>
+        <section id='ada' className="ada reveal work-section">
           <div className="title reveal">
             <h1 className="h1 text-white" style={{ letterSpacing: "-1px" }}>
               ADA
@@ -42,8 +42,8 @@ function Work() {
               <button className='btn-ryde' style={{fontFamily:  'Gotham-light, sans-serif', backgroundColor: 'rgb(50, 54, 56)', letterSpacing: '0.3em', padding: '15px 29px', fontSize: '11px', border: '0', marginTop: '15px', color: 'white'}}>VIEW PROJECT</button>
             </a>
           </div>
-        </div>
-        <div className="espy reveal work-section">
+        </section>
+        <section id='espy' className="espy reveal work-section">
           <div className="title reveal">
             <h1 className="h1" style={{ letterSpacing: "-1px", color: 'rgb(50, 54, 56)'}}>
               ESPY
@@ -54,7 +54,7 @@ function Work() {
               <button className='btn-ryde' style={{fontFamily:  'Gotham-light, sans-serif', backgroundColor: 'rgb(50, 54, 56)', letterSpacing: '0.3em', padding: '15px 29px', fontSize: '11px', border: '0', marginTop: '15px', color: 'white'}}>VIEW PROJECT</button>
             </a>
           </div>
-        </div>
+        </section>
       </Layout>
     </div>
   )

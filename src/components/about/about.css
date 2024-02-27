@@ -37,6 +37,8 @@
 .about-child{
     margin-left: 8%;
     margin-right: 8%;
+    position: static;
+    z-index: 5;
 }
 
 .guide-text {
@@ -69,6 +71,12 @@
     margin-bottom: 2vw;
 }
 
+.carousel-text{
+    margin-top: 32px;
+    font-size: 16px;
+    line-height: 2;
+}
+
 @media screen and (max-width: 479px){
 
 } 
@@ -80,6 +88,11 @@
 
     .guide-2-text{
         line-height: 2.6;
+    }
+
+    .carousel-text{
+        line-height: 2.6;
+        max-width: 130px;
     }
 }
 

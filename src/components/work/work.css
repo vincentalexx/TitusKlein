@@ -9,23 +9,25 @@ body {
 html{
     scroll-snap-type: y mandatory;
     height: 100vh;
-    overflow-y: scroll;
 }
 
 .work-section{
     height: 100vh;
     scroll-snap-align: start;
-    overflow-y: hidden;
+    scroll-snap-stop: normal;
 }
 
 .ryde {
     background-image: url('../../assets/images/ryde.jpg');
     background-position: center;
     background-size: cover;
+    height: 100vh;
     width: 100vw;
     padding: 10vw;
     padding-top: 28vh;
     top: 0;
+    animation: fades-work 1s;
+    animation-timeline: calc();
 }
 
 .title{
@@ -52,8 +54,8 @@ html{
     width: 100vw;
     padding: 10vw;
     padding-top: 28vh;
-    top: 0;
     background-color: #c3d5fa;
+    height: 100vh;
 }
 
 .ada {
@@ -64,7 +66,6 @@ html{
     width: 100vw;
     padding: 10vw;
     padding-top: 28vh;
-    top: 0;
     background-color: black;
 }
 
@@ -76,28 +77,36 @@ html{
     width: 100vw;
     padding: 10vw;
     padding-top: 28vh;
-    top: 0;
     background-color: black;
+    position: static;
 }
 
 .reveal{
     opacity: 0;
+    animation-delay: 0.5s;
 }
 
 .active {
-    animation: fades 1s;
+    animation: fades-work 1s;
     animation-timeline: calc();
     opacity: 1;
 }
 
-@keyframes fades {
+.navbar-anim{
+    animation: navbar-fade 1s;
+    animation-timeline: calc();
+}
+
+@keyframes fades-work {
     from{
         opacity: 0;
-        transform: translateY(70px);
+        transform: translateY(60px);
+        height: 110vh;
     }
 
     to{
         opacity: 1;
-        transform: translateY(none);
+        transform: translateY(0px);
+        height: 100vh;
     }
 }

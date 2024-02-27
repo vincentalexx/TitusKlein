@@ -12,7 +12,7 @@ function Layout({children}) {
       let revealTop = reveal[i].getBoundingClientRect().top;
       let revealPoint = 200;
 
-      if (revealTop < windowHeight - revealPoint) {
+      if (revealTop < windowHeight - revealPoint && revealTop > -200) {
         reveal[i].classList.add('active');
       }
     }
