@@ -29,7 +29,7 @@ function Content() {
                     <img src={car} alt="car" className='car'/>
                     <img src={books} alt="books" className='books' />
                 </div>
-                <div className='ensure-text d-flex flex-column justify-content-center' style={{position: 'static'}}>
+                <div className='ensure-text d-flex flex-column justify-content-center' style={{position: 'static', maxWidth: '50%'}}>
                     <div className='reveal-home text'>
                         <h4 className='mb-3' style={{fontSize: '12px', letterSpacing: '.4em', fontFamily: 'Gotham-medium, sans-serif'}}>INNOVATION BY DESIGN</h4>
                         <p className='' style={{fontFamily: 'Gotham-bold, sans-serif', fontSize: '34px', letterSpacing: '2px'}}>ENSURE SUCCESS</p>

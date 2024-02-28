@@ -8,6 +8,8 @@ import {motion} from 'framer-motion'
 import { useRef, useEffect, useState } from 'react'
 import { CarouselList } from './CarouselList'
 import Carousel from './Carousel'
+import Footer from '../Footer';
+
 
 function About() {
   function revealabout() {
@@ -39,12 +41,15 @@ function About() {
               <img src={arrowbot} alt="" style={{ width: "30px" }} />
             </a>
           </div>
-        </div>
-        <div className='about-child'>
-          <Guide />
-        </div>
-        <div className='reveal-about'>
-            <img src={about2} alt="titus klein" style={{maxWidth: '100%'}}/>
+          <div className='about-child'>
+            <Guide />
+          </div>
+          <div className='reveal-about' style={{marginLeft: '-10vw', marginRight: '-10vw'}}>
+              <img src={about2} alt="titus klein" style={{maxWidth: '100%'}}/>
+          </div>
+          <div style={{marginLeft: '-10vw', marginRight: '-10vw'}}>
+            <Footer />
+          </div>
         </div>
         
     </Layout>

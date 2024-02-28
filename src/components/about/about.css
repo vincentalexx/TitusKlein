@@ -9,7 +9,6 @@
     height: 100vh;
     width: 100vw;
     padding: 10vw;
-    padding-top: 28vh;
     top: 0;
     animation: fade 1s;
     animation-timeline: calc();
@@ -18,7 +17,8 @@
 .title-about{
     max-width: 500px;
     max-height: 700px;
-    margin-top: 28px;
+    padding-top: 14vh;
+    position: absolute;
     animation: fade 1s;
     animation-timeline: calc();
 }
@@ -34,11 +34,17 @@
     margin-bottom: 35px;
 }
 
-.about-child{
+.guide-content{
     margin-left: 8%;
     margin-right: 8%;
+}
+
+.about-child{
+
     position: static;
     z-index: 5;
+    top: 0;
+    margin-top: 80vh;
 }
 
 .guide-text {
@@ -109,6 +115,19 @@
         line-height: 2.6;
         max-width: 130px;
     }
+
+    .btn-talk{
+        bottom: -550%;
+    }
+}
+
+.slider-container{
+    margin-left: 20vw;
+    padding-left: '0'; 
+    padding: '-10vw';
+    height: auto;
+    max-height: 900px;
+    margin-bottom: 16vw;
 }
 
 @keyframes fades {
@@ -146,12 +165,19 @@
         margin-top: 0;
         position: relative;
         top: auto;
-        bottom: -540%;
+        bottom: -500%;
         right: auto;
     }
 
     .loc-text{
         margin-bottom: 6vw;
+    }
+
+    .slider-container{
+        margin-left: 5vw;
+        padding: '-10vw';
+        height: auto;
+        max-height: 1100px;
     }
 
 }
