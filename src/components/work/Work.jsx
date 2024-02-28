@@ -3,6 +3,21 @@ import Layout from '../Layout'
 import './work.css'
 
 function Work() {
+  function revealwork() {
+    const revealwork = document.querySelectorAll('.reveal-work');
+
+    for (let i = 0; i < revealwork.length; i++) {
+      let windowHeight = window.innerHeight;
+      let revealTop = revealwork[i].getBoundingClientRect().top;
+      let revealPoint = 200;
+
+      if (revealTop < windowHeight - revealPoint && revealTop > -200) {
+        revealwork[i].classList.add('active-home');
+        console.log('reveal-work');
+      }
+    }
+  }
+  window.addEventListener('scroll', revealwork);
   return (
     <div className='work-page' style={{ scrollSnapType: 'y mandatory' }}>
       <Layout>
@@ -19,8 +34,8 @@ function Work() {
             </a>
           </div>
         </section>
-        <section id='dash' className="dash reveal work-section">
-          <div className="title reveal">
+        <section id='dash' className="dash reveal-work work-section">
+          <div className="title reveal-work">
             <h1 className="h1" style={{ letterSpacing: "-1px", color: 'rgb(50, 54, 56)' }}>
               DASH
             </h1>
@@ -31,8 +46,8 @@ function Work() {
             </a>
           </div>
         </section>
-        <section id='ada' className="ada reveal work-section">
-          <div className="title reveal">
+        <section id='ada' className="ada reveal-work work-section">
+          <div className="title reveal-work">
             <h1 className="h1 text-white" style={{ letterSpacing: "-1px" }}>
               ADA
             </h1>
@@ -43,8 +58,8 @@ function Work() {
             </a>
           </div>
         </section>
-        <section id='espy' className="espy reveal work-section">
-          <div className="title reveal">
+        <section id='espy' className="espy reveal-work work-section">
+          <div className="title reveal-work">
             <h1 className="h1" style={{ letterSpacing: "-1px", color: 'rgb(50, 54, 56)'}}>
               ESPY
             </h1>

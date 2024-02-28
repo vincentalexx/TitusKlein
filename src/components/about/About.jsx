@@ -10,6 +10,21 @@ import { CarouselList } from './CarouselList'
 import Carousel from './Carousel'
 
 function About() {
+  function revealabout() {
+    const revealabout = document.querySelectorAll('.reveal-about');
+
+    for (let i = 0; i < revealabout.length; i++) {
+      let windowHeight = window.innerHeight;
+      let revealTop = revealabout[i].getBoundingClientRect().top;
+      let revealPoint = 200;
+
+      if (revealTop < windowHeight - revealPoint && revealTop > -200) {
+        revealabout[i].classList.add('active-about');
+        console.log('reveal-about');
+      }
+    }
+  }
+  window.addEventListener('scroll', revealabout);
   return (
     <Layout>
         <div className="about">
@@ -28,7 +43,7 @@ function About() {
         <div className='about-child'>
           <Guide />
         </div>
-        <div className='reveal'>
+        <div className='reveal-about'>
             <img src={about2} alt="titus klein" style={{maxWidth: '100%'}}/>
         </div>
         

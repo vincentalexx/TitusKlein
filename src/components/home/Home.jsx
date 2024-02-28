@@ -6,6 +6,22 @@ import Meeting from './Meeting';
 
 function Home() {
 
+  function revealhome() {
+    const revealhome = document.querySelectorAll('.reveal-home');
+
+    for (let i = 0; i < revealhome.length; i++) {
+      let windowHeight = window.innerHeight;
+      let revealTop = revealhome[i].getBoundingClientRect().top;
+      let revealPoint = 200;
+
+      if (revealTop < windowHeight - revealPoint && revealTop > -200) {
+        revealhome[i].classList.add('active-home');
+        console.log('reveal-home');
+      }
+    }
+  }
+  window.addEventListener('scroll', revealhome);
+
   return (
     <Layout>
       <div className="home">

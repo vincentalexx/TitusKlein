@@ -81,16 +81,13 @@ html{
     position: static;
 }
 
-.reveal{
-    opacity: 0;
-    animation-delay: 0.5s;
-}
-
-.active {
+.active-work {
     animation: fades-work 1s;
     animation-timeline: calc();
     opacity: 1;
 }
+
+
 
 .navbar-anim{
     animation: navbar-fade 1s;

@@ -57,11 +57,11 @@
     margin-bottom: 0;
 }
 
-.reveal{
+.reveal-about{
     opacity: 0;
 }
 
-.active {
+.active-about {
     animation: fades 1s;
     animation-timeline: calc();
     opacity: 1;
@@ -119,7 +119,7 @@
 
     to{
         opacity: 1;
-        transform: translateY(none);
+        transform: translateY(0);
     }
 }
 

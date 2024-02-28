@@ -34,7 +34,7 @@ function Carousel() {
     //       })}
     //   </Slider>
     // </div>
-    <div className="reveal" style={{maxWidth: '100vw', marginBottom: '10vw'}}>
+    <div className="reveal-about" style={{maxWidth: '100vw', marginBottom: '10vw'}}>
       <motion.div className='carousel'>
         <motion.div className='inner-carousel' drag="x">
         {[...CarouselList, ...CarouselList].map((carousel) => {
