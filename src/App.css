@@ -41,6 +41,11 @@ nav {
     }
 }
 
+.selected-nav{
+    color: white;
+    opacity: 1;
+}
+
 .menu {
     padding: 90px;
     padding-top: 150px;

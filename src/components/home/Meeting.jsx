@@ -1,5 +1,8 @@
 import React from 'react'
 import bike from '../../assets/images/bike.jpg'
+import laptop from '../../assets/images/laptop.jpg'
+import triangle from '../../assets/images/triangle.jpg'
+import phone from '../../assets/images/phone.jpg'
 
 function Meeting() {
   return (
@@ -13,23 +16,27 @@ function Meeting() {
         <div style={{marginLeft: '3vw', marginRight: '3vw', marginBottom: '3vw'}}>
             <p className='reveal-home meet-text' style={{fontFamily: 'Gotham-medium, sans-serif', fontSize: '20px', letterSpacing: '0.1em', marginBottom: '30px'}}>VIEW OUR WORK</p>
             <div className='work'>
-                <a href="#" className='reveal-home work-card text-decoration-none'>
-                    <img src={bike} alt="bike" className='work-img'/>
-                    <p className='work-text' style={{fontFamily: 'Gotham-medium, sans-serif', fontSize: '15px', letterSpacing: '1', marginBottom: '30px', marginTop: '15px', color: '#303030'}}>RYDE</p>
+                <div className='work-child'>
+                    <a href="#" className='reveal-home work-card text-decoration-none'>
+                        <img src={bike} alt="bike" className='work-img'/>
+                        <p className='work-text' style={{fontFamily: 'Gotham-medium, sans-serif', fontSize: '15px', letterSpacing: '1', marginBottom: '30px', marginTop: '15px', color: '#303030'}}>RYDE</p>
 
-                </a>
-                <a href="#" className='reveal-home work-card text-decoration-none'>
-                    <img src={bike} alt="bike" className='work-img'/>
-                    <p className='work-text' style={{fontFamily: 'Gotham-medium, sans-serif', fontSize: '15px', letterSpacing: '1', marginBottom: '30px', marginTop: '15px', color: '#303030'}}>ADA</p>
-                </a>
-                <a href="#" className='reveal-home work-card text-decoration-none'>
-                    <img src={bike} alt="bike" className='work-img'/>
-                    <p className='work-text' style={{fontFamily: 'Gotham-medium, sans-serif', fontSize: '15px', letterSpacing: '1', marginBottom: '30px', marginTop: '15px', color: '#303030'}}>ESPY.</p>
-                </a>
-                <a href="#" className='reveal-home work-card text-decoration-none'>
-                    <img src={bike} alt="bike" className='work-img'/>
-                    <p className='work-text' style={{fontFamily: 'Gotham-medium, sans-serif', fontSize: '15px', letterSpacing: '1', marginBottom: '30px', marginTop: '15px', color: '#303030'}}>D.A.S.H.</p>
-                </a>
+                    </a>
+                    <a href="#" className='reveal-home work-card text-decoration-none'>
+                        <img src={laptop} alt="laptop" className='work-img'/>
+                        <p className='work-text' style={{fontFamily: 'Gotham-medium, sans-serif', fontSize: '15px', letterSpacing: '1', marginBottom: '30px', marginTop: '15px', color: '#303030'}}>ADA</p>
+                    </a>
+                </div>
+                <div className='work-child'>
+                    <a href="#" className='reveal-home work-card text-decoration-none'>
+                        <img src={triangle} alt="triangle" className='work-img'/>
+                        <p className='work-text' style={{fontFamily: 'Gotham-medium, sans-serif', fontSize: '15px', letterSpacing: '1', marginBottom: '30px', marginTop: '15px', color: '#303030'}}>ESPY.</p>
+                    </a>
+                    <a href="#" className='reveal-home work-card text-decoration-none'>
+                        <img src={phone} alt="phone" className='work-img'/>
+                        <p className='work-text' style={{fontFamily: 'Gotham-medium, sans-serif', fontSize: '15px', letterSpacing: '1', marginBottom: '30px', marginTop: '15px', color: '#303030'}}>D.A.S.H.</p>
+                    </a>
+                </div>
             </div>
         </div>
     </section>
