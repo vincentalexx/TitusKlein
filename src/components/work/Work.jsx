@@ -21,7 +21,7 @@ function Work() {
   return (
     <div className='work-page' style={{ scrollSnapType: 'y mandatory' }}>
       <Layout>
-        <section id='ryde' className="ryde work-section">
+        <section id='ryde' className="ryde reveal-work work-section">
           <div className="title">
             <h1 className="h1 text-white" style={{ letterSpacing: "-1px" }}>
               RYDE

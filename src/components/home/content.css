@@ -14,6 +14,7 @@
 }
 
 
+
 .sgg {
     width: 24vw;
     height: 38vw;
@@ -88,6 +89,7 @@
 
 .ensure-text {
     max-width: 600px;
+    width: 50%;
 }
 
 .ensure-img{
@@ -129,6 +131,7 @@
     flex-direction: column;
     justify-content: center;
     opacity: 0;
+    max-width: 99%;
 }
 
 .meeting {
@@ -254,9 +257,24 @@
 
     .text{
         height: auto;
+        max-width: 100%;
     }
 
     .work-img{
         height: auto;
+    }
+
+    .drive{
+        margin-left: 8vw;
+        margin-right: 8vw;
+    }
+    
+    .ensure{
+        margin-left: 8vw;
+        margin-right: 8vw;
+    }
+
+    .ensure-text{
+        width: 100%;
     }
 }

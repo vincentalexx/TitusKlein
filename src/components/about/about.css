@@ -117,7 +117,12 @@
     }
 
     .btn-talk{
-        bottom: -550%;
+        float: none;
+        margin-top: 0;
+        position: relative;
+        top: auto;
+        right: auto;
+        bottom: -565%;
     }
 }
 
@@ -158,15 +163,6 @@
 
     .your-guide{
         margin-bottom: 4vw;
-    }
-
-    .btn-talk{
-        float: none;
-        margin-top: 0;
-        position: relative;
-        top: auto;
-        bottom: -500%;
-        right: auto;
     }
 
     .loc-text{
