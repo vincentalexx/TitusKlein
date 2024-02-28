@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import titusklein from '../assets/images/titusklein.svg';
 import { FaBars, FaTimes } from "react-icons/fa";
 import arrow from '../assets/images/arrow.svg';
@@ -9,28 +9,23 @@ function Navbar() {
 
   const showLayout = () => {
     navRef.current.classList.toggle('responsive_nav');
+    icons();
+    setisOpen(!isOpen);
   }
 
-//   let [isSelected, setisSelected] = useState(false)
+  let [isOpen, setisOpen] = useState(false)
 
-//   const Selected = () => {
-//     setisSelected(false)
-//   }
+  var icon = document.getElementsByClassName('icons');
 
-//   var selection = document.getElementsByClassName('.navbar-selection')
-
-//   console.log(selection[0])
   
-//   function select(id){
-//     for(var i = 0; i < selection.length; i++){
-//         if(i == id){
-//             selection[i].classList.add("selected-nav")
-//         }
-//         else{
-//             selection[i].classList.remove("selected-nav")
-//         }
-//     }
-// }
+  function icons(){
+    icon[0].classList.add('change');
+    setInterval(icons2, 400);
+  }
+
+  function icons2(){
+    icon[0].classList.remove('change');
+  }
 
   return (
     <div>
@@ -38,8 +33,10 @@ function Navbar() {
             <a href="">
             <img src={titusklein} alt="Titus Klein" style={{width: "180px", }}/>
             </a>
-            <div className='text-decoration-none text-white fs-5' style={{cursor: 'pointer'}} onClick={showLayout}>
-            <FaBars />
+            <div className='icons text-decoration-none text-white' style={{cursor: 'pointer', paddingBottom: '3.5px', fontSize: '25px'}} onClick={showLayout}>
+              {
+                isOpen ? <FaTimes/> : <FaBars />
+              }
             </div>
         </div>
         <nav ref={navRef} className='menu d-flex flex-column '>
