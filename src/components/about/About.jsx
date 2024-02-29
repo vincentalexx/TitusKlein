@@ -31,7 +31,7 @@ function About() {
     <Layout>
         <div className="about">
           <div className="title-about">
-            <h1 className="h1 text-white" style={{ letterSpacing: "-1px" }}>
+            <h1 className="about-title text-white" style={{ letterSpacing: "-1px" }}>
               IMPACT BY DESIGN.
             </h1>
             <p className="desc">

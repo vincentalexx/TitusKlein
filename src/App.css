@@ -9,7 +9,8 @@
     height: 100vh;
     width: 100vw;
     padding: 10vw;
-    padding-top: 28vh;
+    display: flex;
+    align-items: center;
     top: 0;
 }
 
@@ -53,20 +54,20 @@ nav {
 
 .menu {
     padding: 90px;
-    padding-top: 150px;
+    padding-top: 18vh;
     margin-top: -90px;
     background-color: rgb(27, 25, 27);
 }
 
 .toggle {
     opacity: 0;
-    font-size: 35px;
+    font-size: 3.5vh;
     margin-bottom: 5px;
     font-family: Gotham-light, sans-serif;
 }
 
 .startproject {
-    font-size: 22px;
+    font-size: 2vh;
     font-family: Gotham-light, sans-serif;
 }
 
@@ -83,13 +84,17 @@ nav {
     animation-timeline: calc();
 }
 
+.title-home{
+    font-size: 70px;
+    font-family: Gotham-bold, sans-serif;
+}
+
 .h1{
     font-size: 70px;
     font-family: Gotham-bold, sans-serif;
 }
 
 .desc {
-    margin-top: 15px;
     font-size: 18px;
     margin-top: 20px;
     color: white;
@@ -116,6 +121,37 @@ nav {
 .footer-contact{
     display: flex;
     align-items: center;
+}
+
+.logs{
+    display: flex;
+    justify-content: end;
+}
+
+.btn-top {
+    margin-left: 42px;
+    margin-top: 1px;
+}
+
+.f-logo{
+    margin-left: 36px;
+}
+
+@media screen and (max-width: 991px){
+    .footer{
+        grid-template-columns: 2fr 2fr 1fr;
+        grid-column-gap: 20px;
+    }
+    
+    .nav{
+        position: fixed;
+        width: 100vw;
+    }
+
+    .menu{
+        height: 100vh;
+        margin-top: 0;
+    }
 }
 
 @media screen and (max-width: 767px){
@@ -152,24 +188,42 @@ nav {
     .footer-contact{
         justify-content: end;
     }
-}
-
-@media screen and (max-width: 991px){
-    .footer{
-        grid-template-columns: 2fr 2fr 1fr;
-        grid-column-gap: 20px;
+    
+    .title-home{
+        font-size: 60px;
     }
     
-    .nav{
-        position: fixed;
-        width: 100vw;
+}
+
+@media screen and (max-width: 479px) {
+    .title-home{
+        font-size: 50px;
     }
 
-    .menu{
-        height: 100vh;
+    .footer{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .logs {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .btn-top {
+        margin-left: 0;
         margin-top: 0;
     }
+
+    .f-logo{
+        margin-left: 0;
+        margin-bottom: 20px;
+    }
 }
+
+
 
 @keyframes fade {
     from{

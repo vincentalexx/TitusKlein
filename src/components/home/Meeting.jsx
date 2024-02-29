@@ -9,7 +9,7 @@ function Meeting() {
     <section id='meeting' className='' style={{marginBottom: '70px', marginLeft: '8vw', marginRight: '8vw'}}>
         <div className='d-flex flex-column justify-content-center align-items-center reveal-home meeting' style={{marginBottom: '15vw'}}>
             <h4 className='mb-3' style={{fontSize: '12px', letterSpacing: '.4em', fontFamily: 'Gotham-medium, sans-serif'}}>INNOVATION BY DESIGN</h4>
-            <p className='' style={{fontFamily: 'Gotham-bold, sans-serif', fontSize: '34px', letterSpacing: '2px'}}>SET UP A 15 MIN MEETING</p>
+            <p className='setup' style={{fontFamily: 'Gotham-bold, sans-serif', letterSpacing: '2px'}}>SET UP A 15 MIN MEETING</p>
             <p className='text-center' style={{lineHeight: '2', fontSize: '16px', maxWidth: '400px', marginBottom: '25px'}}>Set up a call with one of our creative directors to discover how you can leverage design to enhance the launch of your products.</p>
             <button style={{fontFamily: 'Gotham-light, sans-serif', backgroundColor: 'rgb(50, 54, 56)', letterSpacing: '0.3em', padding: '15px 29px', fontSize: '11px', border: '0', marginTop: '15px', color: 'white'}}>SCHEDULE A CALL</button>
         </div>

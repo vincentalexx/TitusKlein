@@ -3,6 +3,7 @@ import '../../App.css'
 import Layout from '../Layout';
 import Content from './Content';
 import Meeting from './Meeting';
+import Footer from '../Footer'
 
 function Home() {
 
@@ -26,7 +27,7 @@ function Home() {
     <Layout>
       <div className="home">
         <div className="title">
-          <h1 className="h1 text-white" style={{ letterSpacing: "-1px" }}>
+          <h1 className="title-home text-white" style={{ letterSpacing: "-1px" }}>
             DESIGN + BRANDING.
           </h1>
           <p className="desc">
@@ -41,6 +42,7 @@ function Home() {
       </div>
       <Content />
       <Meeting />
+      <Footer />
     </Layout>
 
   );

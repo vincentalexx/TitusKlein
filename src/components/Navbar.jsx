@@ -47,12 +47,11 @@ function Navbar() {
             <a href="" className='navbar-selection toggle text-decoration-none text-white' style={{ fontWeight: '700', letterSpacing: '0.3vw', paddingTop: '12px', paddingBottom: '12px', width: '145px'}}>FOCUS</a>
             <a href="" className='navbar-selection toggle text-decoration-none text-white' style={{ fontWeight: '700', letterSpacing: '0.3vw', paddingTop: '12px', paddingBottom: '12px', width: '210px'}}>CONTACT</a>
             <a href="" className='navbar-selection toggle text-decoration-none text-white' style={{ fontWeight: '700', letterSpacing: '0.3vw', paddingTop: '12px', paddingBottom: '12px', width: '250px'}}>MWC 2020</a>
-            <a href="" className='startproject text-decoration-none text-white' style={{fontWeight: '700', letterSpacing: '0.2vw', paddingTop: '12px', paddingBottom: '12px', width: '320px', marginTop: '40px'}}>Start A Project
+            <a href="" className='startproject text-decoration-none text-white' style={{fontWeight: '700', letterSpacing: '0.2vw', paddingBottom: '12px', width: '320px', marginTop: '3vh'}}>Start A Project
             <img src={arrow} alt="arrow" style={{width: '30px', marginLeft: '20px'}}/>
             </a>
         </nav>
     </div>
-
   )
 }
 
